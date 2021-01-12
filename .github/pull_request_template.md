@@ -8,3 +8,7 @@
 # Additional Info
  - any additional information or context 
  
+ # Checklist
+ -[] add new lib in package.json
+ -[] add documentation
+ 
