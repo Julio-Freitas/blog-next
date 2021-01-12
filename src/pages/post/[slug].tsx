@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ReactElement } from 'react';
+import Post from '../../containers/post';
 import { countAllPosts } from '../../data/posts/count-all-posts';
 import { getAllPosts } from '../../data/posts/get-all-posts';
 import { getPost } from '../../data/posts/get-post';
@@ -7,11 +8,15 @@ import { PostData } from '../../domain/posts/post';
 import * as Styled from './style';
 
 export type DynamicProps = {
-  post: PostData[];
+  post: PostData;
 };
 
 const DynamicPost = ({ post }: DynamicProps): ReactElement => {
-  return <Styled.Container>slug {console.log(post)} </Styled.Container>;
+  return (
+    <Styled.Container>
+      <Post post={post} />
+    </Styled.Container>
+  );
 };
 
 export default DynamicPost;

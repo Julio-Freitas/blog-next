@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { ReactElement } from 'react';
-import * as util from '../../utils/functions';
+import * as util from '../../utils/formta-date';
 import * as Styled from './style';
 
 export type PostCardProps = {
