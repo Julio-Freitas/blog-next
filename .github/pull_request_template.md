@@ -9,6 +9,6 @@
  - any additional information or context 
  
  # Checklist
- -[] Add new lib in package.json
- -[] Add documentation
+ - [ ] Add new lib in package.json
+ - [ ] Add documentation
  
