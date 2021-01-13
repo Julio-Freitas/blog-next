@@ -7,13 +7,11 @@ export type PostAuthor = {
 };
 
 export type PostCategory = {
-  category: {
-    id: number;
-    name: string;
-    published_at: string;
-    created_at: string;
-    updated_at: string;
-  };
+  id: number;
+  name: string;
+  published_at: string;
+  created_at: string;
+  updated_at: string;
 };
 
 export type PostCoverFormats = {

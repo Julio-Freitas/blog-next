@@ -23,7 +23,6 @@ ${({ theme }) => css`
     color: ${theme.colors.darkGray};
   }
 `}
-:first
 `;
 
 export const Published = Styled.div`
