@@ -6,7 +6,6 @@ ${({ theme }) => css`
   font-size: ${theme.font.sizes.small};
   margin: ${theme.spacings.small} 0;
   font-style: italic;
-  text-align: center;
 `}
 
 `;
