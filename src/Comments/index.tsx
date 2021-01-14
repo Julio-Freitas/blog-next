@@ -12,7 +12,7 @@ export const Comments = ({ slug, title }: PropsCommentsProps): ReactElement => (
     <DiscussionEmbed
       shortname={'myblognext'}
       config={{
-        url: `vcap.me:3000/post/${slug}`,
+        url: `/post/${slug}`,
         identifier: slug,
         title,
         language: 'pt-BR',
