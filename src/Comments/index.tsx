@@ -10,11 +10,11 @@ export type PropsCommentsProps = {
 export const Comments = ({ slug, title }: PropsCommentsProps): ReactElement => (
   <Styled.Container>
     <DiscussionEmbed
-      shortname={'myblognext'}
+      shortname="myblognext"
       config={{
         url: `/post/${slug}`,
         identifier: slug,
-        title,
+        title: title,
         language: 'pt-BR',
       }}
     />
