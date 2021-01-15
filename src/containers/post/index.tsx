@@ -27,6 +27,7 @@ export default function Post({ post }: PostProps) {
           category={post.category.name}
         />
         <PostContainer content={post.content} />
+
         <Comments slug={post.slug} title={post.title} />
       </Styled.Container>
       <Footer />
