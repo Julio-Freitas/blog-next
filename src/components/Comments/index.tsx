@@ -8,7 +8,7 @@ export type PropsCommentsProps = {
   title: string;
 };
 
-export const Comments = ({ slug, title }: PropsCommentsProps): ReactElement => (
+const Comments = ({ slug, title }: PropsCommentsProps): ReactElement => (
   <Styled.Container>
     <DiscussionEmbed
       shortname="myblognext"
@@ -21,3 +21,5 @@ export const Comments = ({ slug, title }: PropsCommentsProps): ReactElement => (
     />
   </Styled.Container>
 );
+
+export default Comments;

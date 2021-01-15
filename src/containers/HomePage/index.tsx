@@ -1,7 +1,10 @@
+import { SITE_NAME } from '../../config/config';
+import Head from 'next/head';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import MainContainer from '../../components/MainContainer';
 import PostCard from '../../components/PostCard';
+
 import { PostData } from '../../domain/posts/post';
 import * as Styled from './style';
 export type HomeProps = {
@@ -10,6 +13,10 @@ export type HomeProps = {
 export default function HomePage({ posts }: HomeProps) {
   return (
     <>
+      <Head>
+        <title>{SITE_NAME}</title>
+        <meta name="description" content="Diste desenvolvido em next" />
+      </Head>
       <Header />
       <MainContainer>
         <Styled.Container>
