@@ -9,8 +9,9 @@ import { PostData } from '../../domain/posts/post';
 import * as Styled from './style';
 export type HomeProps = {
   posts: PostData[];
+  category?: string;
 };
-export default function HomePage({ posts }: HomeProps) {
+export default function HomePage({ posts, category }: HomeProps) {
   return (
     <>
       <Head>
@@ -19,6 +20,9 @@ export default function HomePage({ posts }: HomeProps) {
       </Head>
       <Header />
       <MainContainer>
+        {category && (
+          <Styled.TitleCategory>Categpria: {category}</Styled.TitleCategory>
+        )}
         <Styled.Container>
           {posts.map((post, index) => (
             <PostCard

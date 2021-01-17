@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { ReactElement } from 'react';
 import { convertDateToPtBR } from '../../utils/formta-date';
 import * as Styled from './style';
@@ -14,7 +15,10 @@ export default function PostDetails({
 }: propsPostDatails): ReactElement {
   return (
     <Styled.Container>
-      Públicado por {author} em {convertDateToPtBR(date)}, categoria: {category}
+      Públicado por {author} em {convertDateToPtBR(date)}, categoria:{' '}
+      <Link href={`/categories/${category.toLocaleLowerCase()}`}>
+        {category}
+      </Link>
     </Styled.Container>
   );
 }
