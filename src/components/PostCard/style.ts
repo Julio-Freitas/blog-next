@@ -1,5 +1,7 @@
 import Styled, { css } from 'styled-components';
-export const Container = Styled.div``;
+export const Container = Styled.div`
+box-shadow: 1px 0px 1px #0070f3;
+`;
 
 export const PostCardCover = Styled.div`
 margin-bottom: ${({ theme }) => theme.spacings.small};

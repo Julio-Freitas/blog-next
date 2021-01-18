@@ -21,7 +21,7 @@ export default function HomePage({ posts, category }: HomeProps) {
       <Header />
       <MainContainer>
         {category && (
-          <Styled.TitleCategory>Categpria: {category}</Styled.TitleCategory>
+          <Styled.TitleCategory>Categoria: {category}</Styled.TitleCategory>
         )}
         <Styled.Container>
           {posts.map((post, index) => (

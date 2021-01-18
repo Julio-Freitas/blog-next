@@ -31,7 +31,7 @@ export default function Post({ post }: PostProps) {
       </Head>
       <Styled.Container>
         <Heading>
-          <h2>{post.title}</h2>
+          <Styled.Title>{post.title}</Styled.Title>
         </Heading>
         <PostCover coverUrl={post.cover.formats.medium.url} alt={post.title} />
 
