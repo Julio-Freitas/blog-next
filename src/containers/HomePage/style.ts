@@ -12,5 +12,10 @@ ${({ theme }) => css`
   font-weight: 300;
   text-transform: capitalize;
 `}
+`;
 
+export const AllPostsLinks = Styled.a`
+  display: block;
+  text-align: center;
+  margin: ${({ theme }) => theme.spacings.large} 0;
 `;

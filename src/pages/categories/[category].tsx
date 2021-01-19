@@ -18,7 +18,7 @@ export default function Category({
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { category } = context.query;
-  const url = `_sort=id:desc&_start=0&_limit=30&category.name_contains=${category}`;
+  const url = `_sort=id:desc&_start=0&_limit=3&category.name_contains=${category}`;
   const posts = await getAllPosts(url);
   return {
     props: {
