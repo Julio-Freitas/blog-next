@@ -10,7 +10,6 @@ import Header from '../../components/Header';
 import MainContainer from '../../components/MainContainer';
 import PostCard from '../../components/PostCard';
 import Pagination from '../../components/Pagination';
-
 import * as Styled from './style';
 
 export type HomeProps = {
